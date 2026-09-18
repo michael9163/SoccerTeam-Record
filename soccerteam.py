@@ -5,6 +5,7 @@ from data.year import year, year_2022, year_2023, year_2024, year_2025, year_202
 from data.player1 import player_1, player_2, player_3
 from data.player2 import player_4, player_5
 
+df_year = pd.read_csv("./data/team_record.csv")
 
 
 st.set_page_config(
@@ -65,7 +66,7 @@ with st.sidebar:
         )
 
 
-# 팀기록 화면
+# year.py (팀기록 화면)
 if page == "팀기록":
 
     if selected_year == "전체":
